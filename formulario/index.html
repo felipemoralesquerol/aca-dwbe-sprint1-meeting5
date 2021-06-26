@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+</head>
+<body>
+    <h2>Formularios</h2>
+
+    <form action="procesamiento.html" method="get">
+        <h3>Datos Personales</h3>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre">
+        <br>
+        <label for="apellido">Apellido: </label>
+        <input class="apellido" type="text" name="apellido" id="apellido">
+        <br>
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad">
+        <br>
+        <label for="paises">País</label>
+        <select name="paises1" id="paises">
+            <!-- <option value="ar">Argentina</option>
+            <option value="cl">Chile</option>
+            <option value="co">Colombia</option>
+            <option value="bo">Bolivia</option>
+            <option value="mx">México</option>
+            <option value="uy">Uruguay</option> -->
+        </select>
+        <br>
+        <p>Sexo</p>
+        <label for="radio">Masculino</label> <input type="radio" name="sexo" id=""> 
+        <label for="radio">Masculino</label> <input type="radio" name="sexo" id="">
+        <label for="radio">Prefiero no contestar</label> <input type="radio" name="sexo" id="">
+        
+        <h3  >Hobbies</h3>
+        <div id="hobbies">
+          <!-- <input type="checkbox" name="h12" id="h11" value="h1"> <label for="h11">Hobbie 1</label>    -->    
+        </div>
+        <br>
+        <label for="texto">Comentarios:</label>
+        <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+        
+    </form>
+
+
+
+</body>
+<script src="apps.js"></script>
+</html>

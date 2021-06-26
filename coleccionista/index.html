@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleccionista</title>
+    <script src="js/apps.js"></script>
+    <link rel="stylesheet" href="style/css.css">
+</head>
+
+<body>
+    <h1 class="titulo">Coleccionista de Automóviles</h1>
+    <h2 class="autor">Felipe Morales</h2>
+
+
+
+    <div class="divFormulario">
+
+
+        <form id="formulario" action="">
+            <label for="marca">Marca</label>
+            <input type="text" name="marca" id="marca">
+            <input type="button" onclick="agregarMarcaArray()" value="Agregar">
+            <br><br>
+
+            <label for="marcas">Marcas</label>
+            <select name="marcas" id="marcas">
+        
+            </select>
+            <br> <br>
+
+            <input type="button" onclick="limpiarForm()" value="Limpiar formulario"> <!-- usando js -->
+            <!-- <input type="reset" value="Limpiar formulario"> usando HTML5 -->
+
+            <input type="submit" onsubmit="agregarMarcaArray()" value="Enviar">
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

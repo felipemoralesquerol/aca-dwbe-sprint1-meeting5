@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id='1'>Gracias!</h1>
+    <script>
+        console.log(window.location.search);
+        function queryString()
+        {
+            var queryString = window.location.search;
+            var varArray = queryString.split("&");
+            for (var i=0;i<varArray.length;i++) {
+              var param = varArray[i].split("=");
+            }
+           return varArray; 
+        } 
+        var aux = queryString();
+        console.log(aux);
+        console.log(document.getElementById("1").textContent=aux);
+        
+    </script>
+</body>
+</html>

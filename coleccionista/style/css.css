@@ -1,0 +1,17 @@
+.titulo {
+    color:red;
+    border: solid 1px;
+    text-align: center;
+    background-color: orange
+}
+
+.autor{
+    font-size: 36px;
+    font-style: normal;
+    border: solid 1px red
+}
+
+.divFormulario {
+   padding-left: 100px;
+
+}
