@@ -1,23 +1,24 @@
 
-let original = ['Curso', 'Backend', 'Squad', 'Acámica', 'Trainees', 'Working', 'Javascript', 'Html'];
-let array = [];
+let arrayOriginal = ['Curso', 'Backend', 'Squad', 'Acámica', 'Trainees', 'Working', 'Javascript', 'Html'];
+let arrayOperaciones = [];
 
 
-function addArray() {
-    array = []
-    for(let i = 0; i < original.length; i++){
-        array.push(original[i]);
+function addElementsArray() {
+    // Agrega los elementos del array original al array de operaciones
+    arrayOperaciones = []
+    for(let i = 0; i < arrayOriginal.length; i++){
+        arrayOperaciones.push(arrayOriginal[i]);
     }
     showArray();
 }
 
 function showArray() {
-    console.log('addArray');
+    console.log(this);
     let divElementos = document.getElementById('elementos');
     divElementos.innerHTML = '';
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < arrayOperaciones.length; i++) {
         item = document.createElement('div')
-        item.textContent = i + '-' + array[i];
+        item.textContent = i + '-' + arrayOperaciones[i];
         item.className = 'elemento';
         divElementos.appendChild(item);
     }
@@ -26,13 +27,13 @@ function showArray() {
 
 function delFirstArray() {
     console.log('delFirstArray');
-    array.splice(0,1);
+    arrayOperaciones.splice(0,1);
     showArray();
 }
 
 function delLastArray() {
     console.log('delLastArray');
-    array.pop();
+    arrayOperaciones.pop();
     showArray();
 }
 

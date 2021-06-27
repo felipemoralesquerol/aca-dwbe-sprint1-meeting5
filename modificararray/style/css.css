@@ -6,9 +6,20 @@
 
 }
 
+h1 {
+    text-align: center;
+}
+
 .elementos {
     text-align: center;
 }
 .operaciones {
     text-align: center;
+}
+
+.foto {
+    display:block;
+    margin:auto;
+    width: 5%;
+    border-radius: 2em;
 }
