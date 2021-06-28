@@ -13,6 +13,7 @@ function addElementsArray() {
 }
 
 function showArray() {
+    // Muestra los elementos de un array en index
     console.log(this);
     let divElementos = document.getElementById('elementos');
     divElementos.innerHTML = '';
@@ -26,12 +27,14 @@ function showArray() {
 
 
 function delFirstArray() {
+    // Elimina el primer elemento del array y lo muestra en pantalla
     console.log('delFirstArray');
     arrayOperaciones.splice(0,1);
     showArray();
 }
 
 function delLastArray() {
+    // Elimina el último elemento del array y lo muestra en pantalla
     console.log('delLastArray');
     arrayOperaciones.pop();
     showArray();
