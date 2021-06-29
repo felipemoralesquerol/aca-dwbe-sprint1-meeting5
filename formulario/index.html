@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
     <title>Formulario</title>
 
 </head>
+
 <body>
-    <h2>Formularios</h2>
+    <h2>Datos personales</h2>
 
     <form action="procesamiento.html" method="get">
-        <h3>Datos Personales</h3>
+        <h3>Ingreses sus datos</h3>
         <label for="nombre">Nombre: </label>
         <input type="text" name="nombre" id="nombre">
         <br>
@@ -32,24 +34,29 @@
         </select>
         <br>
         <p>Sexo</p>
-        <label for="radio">Masculino</label> <input type="radio" name="sexo" id=""> 
-        <label for="radio">Masculino</label> <input type="radio" name="sexo" id="">
-        <label for="radio">Prefiero no contestar</label> <input type="radio" name="sexo" id="">
-        
-        <h3  >Hobbies</h3>
+        <label for="sexo1">Masculino</label>
+        <input type="radio" class="sexo" name="sexo" id="sexo1" value="Masculino">
+        <label for="sexo2">Femenino</label>
+        <input type="radio" class="sexo" name="sexo" id="sexo2" value="Femenino">
+        <label for="sexo3">Prefiero no contestar</label>
+        <input type="radio" class="sexo" name="sexo" id="sexo3" value="Prefiero no contestar">
+
+        <h3>Hobbies</h3>
         <div id="hobbies">
-          <!-- <input type="checkbox" name="h12" id="h11" value="h1"> <label for="h11">Hobbie 1</label>    -->    
+            <!-- <input type="checkbox" name="h12" id="h11" value="h1"> <label for="h11">Hobbie 1</label>    -->
         </div>
         <br>
         <label for="texto">Comentarios:</label>
         <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Enviar">
-        
+        <br> <br>
+        <input type="button" name="ver_resultados" id="ver_resultados" value="Ver resultados"> <br> <br>
+        <input type="submit" value="Enviar datos">
     </form>
 
+    <div id="respuestas"></div>
 
 
 </body>
 <script src="apps.js"></script>
+
 </html>
