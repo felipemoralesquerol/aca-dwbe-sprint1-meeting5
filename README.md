@@ -6,4 +6,5 @@
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-
+## Para descargar este proyecto hacerlo desde el siguiente repositorio:
+https://github.com/felipemoralesquerol/aca-dwbe-sprint1-meeting5.git
