@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Formulario de Datos Personales</title>
 
 </head>
 
@@ -13,6 +13,7 @@
     <h2>Datos personales</h2>
 
     <form action="procesamiento.html" method="get">
+        <!-- Cuando se presiona el boton submit de este formulario se navega automaticamente a procesamiento.html -->
         <h3>Ingreses sus datos</h3>
         <label for="nombre">Nombre: </label>
         <input type="text" name="nombre" id="nombre">
@@ -24,13 +25,10 @@
         <input type="number" name="edad" id="edad">
         <br>
         <label for="paises">País</label>
-        <select name="paises1" id="paises">
-            <!-- <option value="ar">Argentina</option>
-            <option value="cl">Chile</option>
-            <option value="co">Colombia</option>
-            <option value="bo">Bolivia</option>
-            <option value="mx">México</option>
-            <option value="uy">Uruguay</option> -->
+        <select name="paises" id="paises">
+            <!-- Aqui los options se van a agregar desde apps.js en forma dinamica en la funcion cargar_paises
+                 Cada optin es de la forma <option value="ar">Argentina</option>
+             -->
         </select>
         <br>
         <p>Sexo</p>
@@ -43,7 +41,8 @@
 
         <h3>Hobbies</h3>
         <div id="hobbies">
-            <!-- <input type="checkbox" name="h12" id="h11" value="h1"> <label for="h11">Hobbie 1</label>    -->
+            <!-- Aqui cada hobbie se va a agregar dinamicamente desde apps.js en la funcion cargar_hobbies
+                <input type="checkbox" name="h1" id="h1" value="h1"> <label for="h1">Hobbie 1</label>    -->
         </div>
         <br>
         <label for="texto">Comentarios:</label>
